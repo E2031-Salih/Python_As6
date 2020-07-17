@@ -1,0 +1,10 @@
+n = int(input("I'll give you the prime number list from 2 to n=?"))
+prime = []
+for i in range(2, n + 1):
+    a = 0
+    for j in range(1, i + 1):
+        if i % j == 0:
+            a += 1
+    if a == 2:
+        prime.append(i)
+print(list(prime))
